@@ -1,5 +1,7 @@
 # torgcrm-vue-webapp
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/torgcrm/torgcrm-vue-webapp.svg)](https://greenkeeper.io/)
+
 > TorgCRM CRM Web application
 
 ## Build Setup
