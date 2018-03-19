@@ -1,4 +1,9 @@
-html body {
+html, body {
   margin: 0px;
   padding: 0px;
+  height: 100% !important;
+}
+
+#app, .el-container, .container {
+  height: 100% !important;
 }
