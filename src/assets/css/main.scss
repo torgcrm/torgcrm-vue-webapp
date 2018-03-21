@@ -7,3 +7,9 @@ html, body {
 #app, .el-container, .container {
   height: 100% !important;
 }
+
+.el-menu-item-group__title {
+  color: white !important;
+  font-size: 14px;
+  background: rgb(7, 71, 200);
+}
