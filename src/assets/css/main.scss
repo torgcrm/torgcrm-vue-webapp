@@ -13,3 +13,22 @@ html, body {
   font-size: 14px;
   background: rgb(7, 71, 200);
 }
+
+.el-header {
+  background-color: #B3C0D1;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+}
+
+body > .el-container {
+  margin-bottom: 40px;
+}
+.el-side-menu ul {
+  background: rgb(7, 71, 166);
+}
+
+.el-header {
+  background: rgb(7, 71, 166);
+  color: white;
+}

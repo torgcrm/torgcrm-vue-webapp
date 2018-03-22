@@ -4,16 +4,44 @@
     class="side-menu"
     @open="handleOpen"
     @close="handleClose">
+    <el-menu-item index="0">
+      <router-link to="/">
+        <i class="el-icon-star-on"></i>
+        <span>Общая информация</span>
+      </router-link>
+    </el-menu-item>
     <el-menu-item-group title="CRM">
       <el-menu-item index="1">
-        <i class="el-icon-location"></i>
-        <router-link to="component">
+        <router-link to="orders">
+          <i class="el-icon-location"></i>
           <span>Заказы</span>
         </router-link>
       </el-menu-item>
       <el-menu-item index="2">
-        <i class="el-icon-location"></i>
-        <span>Клиенты</span>
+        <router-link to="customers">
+          <i class="el-icon-location"></i>
+          <span>Клиенты</span>
+        </router-link>
+      </el-menu-item>
+    </el-menu-item-group>
+    <el-menu-item-group title="Настройки">
+      <el-menu-item index="3">
+        <router-link to="projects">
+          <i class="el-icon-location"></i>
+          <span>Проекты</span>
+        </router-link>
+      </el-menu-item>
+      <el-menu-item index="4">
+        <router-link to="projects">
+          <i class="el-icon-location"></i>
+          <span>Товары</span>
+        </router-link>
+      </el-menu-item>
+      <el-menu-item index="5">
+        <router-link to="projects">
+          <i class="el-icon-location"></i>
+          <span>Поставщики</span>
+        </router-link>
       </el-menu-item>
     </el-menu-item-group>
   </el-menu>
@@ -43,5 +71,12 @@ export default {
 .el-menu-item.is-active {
   background: rgb(10, 71, 200);
   color: white;
+}
+.el-menu-item a {
+  margin: 0px;
+  padding: 0px;
+  float: left !important;
+  height: 100%;
+  width: 100%;
 }
 </style>
