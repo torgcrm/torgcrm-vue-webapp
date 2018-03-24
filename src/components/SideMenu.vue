@@ -6,20 +6,20 @@
     @close="handleClose">
     <el-menu-item index="0">
       <router-link to="/">
-        <i class="el-icon-star-on"></i>
+        <icon class="el-icon--left" name="tachometer"></icon>
         <span>Общая информация</span>
       </router-link>
     </el-menu-item>
     <el-menu-item-group title="CRM">
       <el-menu-item index="1">
         <router-link to="orders">
-          <i class="el-icon-location"></i>
+          <icon class="el-icon--left" name="shopping-cart"></icon>
           <span>Заказы</span>
         </router-link>
       </el-menu-item>
       <el-menu-item index="2">
         <router-link to="customers">
-          <i class="el-icon-location"></i>
+          <icon class="el-icon--left" name="users"></icon>
           <span>Клиенты</span>
         </router-link>
       </el-menu-item>
@@ -27,19 +27,25 @@
     <el-menu-item-group title="Настройки">
       <el-menu-item index="3">
         <router-link to="projects">
-          <i class="el-icon-location"></i>
+          <icon class="el-icon--left" name="leaf"></icon>
           <span>Проекты</span>
         </router-link>
       </el-menu-item>
       <el-menu-item index="4">
-        <router-link to="projects">
-          <i class="el-icon-location"></i>
+        <router-link to="goods">
+          <i class="el-icon-goods"></i>
           <span>Товары</span>
         </router-link>
       </el-menu-item>
       <el-menu-item index="5">
+        <router-link to="/categories">
+          <i class="el-icon-goods"></i>
+          <span>Категории товаров</span>
+        </router-link>
+      </el-menu-item>
+      <el-menu-item index="6">
         <router-link to="projects">
-          <i class="el-icon-location"></i>
+          <icon class="el-icon--left" name="address-book"></icon>
           <span>Поставщики</span>
         </router-link>
       </el-menu-item>

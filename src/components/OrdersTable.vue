@@ -1,20 +1,20 @@
 <template>
   <el-table
-    :data="tableData"
+    :data="orders"
     style="width: 100%">
     <el-table-column
-      prop="date"
-      label="Date"
-      width="180">
+      prop="id"
+      label="ID"
+      width="70">
     </el-table-column>
     <el-table-column
-      prop="name"
-      label="Name"
-      width="180">
+      prop="products"
+      label="Товар"
+      :formatter="productFormatter">
     </el-table-column>
     <el-table-column
-      prop="address"
-      label="Address">
+      prop="phone"
+      label="Телефон">
     </el-table-column>
   </el-table>
 </template>
@@ -22,6 +22,12 @@
 <script>
 export default {
   name: 'orders-table',
+  props: ['orders'],
+  methods: {
+    productFormatter (row, column) {
+      return row.products[0].title
+    }
+  },
   data () {
     return {
       tableData: [{

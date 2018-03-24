@@ -6,10 +6,14 @@ import LoginApp from './LoginApp'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
+import store from './store'
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
+Vue.component('icon', Icon)
 
 const authed = true
 
@@ -29,6 +33,7 @@ router.beforeEach((to, from, next) => {
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App, LoginApp },
   template: authed ? '<App/>' : '<LoginApp />'
 })
