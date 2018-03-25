@@ -16,6 +16,16 @@
       prop="phone"
       label="Телефон">
     </el-table-column>
+    <el-table-column label="Действия">
+      <template slot-scope="scope">
+        <el-button
+          @click.native.prevent="deleteOrder(scope.$index)"
+          type="text"
+          size="small">
+          Remove
+        </el-button>
+      </template>
+    </el-table-column>
   </el-table>
 </template>
 
@@ -26,6 +36,9 @@ export default {
   methods: {
     productFormatter (row, column) {
       return row.products[0].title
+    },
+    deleteOrder (index) {
+      this.orders.splice(index, 1)
     }
   },
   data () {
